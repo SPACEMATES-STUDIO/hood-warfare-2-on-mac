@@ -58,6 +58,18 @@ The Switch Pro controller was detected through Wine as an XInput controller. Phy
 
 Use Windows Steam to update the game and verify its installed files. Check the game's current server status and release notes. Public multiplayer was tested on build `25888787`; future updates can change compatibility. This project provides no anti-cheat bypass.
 
+## Friends cannot join a party
+
+[Patch 1.0.1.7](https://store.steampowered.com/news/app/5155360/view/672882996184876027) added party invitations and the ability to queue and join games together. Instructions written before that patch may describe missing invitation support.
+
+1. Close the game and open this installation's `Open Windows Steam.command` to check for updates. Have the other players update too; updating macOS Steam alone does not update this Windows installation.
+2. Use the game's party invitations and confirm that everyone has joined the party before starting matchmaking. Entering matchmaking separately is not a substitute for joining a party.
+3. If it still fails, note which step fails: sending the invitation, receiving or accepting it, or joining a match after queuing. Include that detail and each player's game build when reporting the problem.
+
+The patch announcement confirms joining games together, but does not promise assignment to the same team. It also does not establish that party invitations work through this Mac/Wine setup; the project's earlier public-multiplayer test is a separate result.
+
+For a longer game-level checklist, including the difference between party matchmaking and password-protected private matches, see the [unofficial Hood Warfare 2 friends guide](https://hoodwarfare2.run/hood-warfare-2-friends/). It is a community-maintained resource, not evidence of Mac compatibility.
+
 ## Uninstalling
 
 Quit the game and its Windows Steam client, then remove `~/Applications/Hood Warfare 2 on Mac` (or the custom destination you selected). This also removes the downloaded game, this installation's Wine prefix, and its local saves; copy any saves you want to keep first.
